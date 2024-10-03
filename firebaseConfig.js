@@ -11,7 +11,7 @@ import { getAuth,GoogleAuthProvider } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyBC0ipK50UBHPef9Km1S3uMb5cK9g6UZMc",
   authDomain: "isa-domain-sel.firebaseapp.com",
-  databaseURL: "https://isa-domain-sel-default-rtdb.asia-southeast1.firebasedatabase.app",
+  databaseURL:process.env.REACT_APP_FIREBASE_DATABASE_URL,
   projectId: "isa-domain-sel",
   storageBucket: "isa-domain-sel.appspot.com",
   messagingSenderId: "141928903550",
